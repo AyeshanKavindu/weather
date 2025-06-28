@@ -13,7 +13,7 @@ export default function App() {
     setError("");
     setWeather(null);
 
-    const apiKey = "76a954b29fb80fc3f3c815cd2692160a";
+    const apiKey = import.meta.env.VITE_WEATHER_API_KEY; // Access env var
 
     try {
       // Step 1: Get city coordinates
